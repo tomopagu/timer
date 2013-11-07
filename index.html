@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tracker" ng-controller="Timer">
+<head>
+    <meta charset="utf-8"/>
+    <timer autostart="false" interval="1000" id="title">
+        <title>Time Tracker - {{hours}}:{{minutes}}:{{seconds}}</title>
+    </timer>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-timer.min.js"></script>
+    <script src="js/site.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section id="clock-timer">
+                    <h3>Time Tracker</h3>
+                    <div class="timer">
+                        <timer autostart="false" interval="1000">
+                            <div class="hour">
+                                <h1>{{hours}}</h1><p>hours</p>
+                            </div>
+                            <div class="mins">
+                                <h1>{{minutes}}</h1><p>minutes</p>
+                            </div>
+                            <div class="secs">
+                                <h1>{{seconds}}</h1><p>seconds</p>
+                            </div>
+                        </timer>
+                    </div>
+                    <div id="buttons">
+                        <button id="resume" class="btn btn-default btn-lg" onclick="stopResumeTimer('clock-timer', this)" type="button">Start</button>
+                        <button id="reset" class="btn btn-default btn-lg" onclick="window.location.reload()" type="button">Reset</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
