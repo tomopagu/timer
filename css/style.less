@@ -1,58 +1,67 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 body {
-    background-image: url('../img/lightpaperfibers.png');
-    font-family: 'Lato', sans-serif;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+  background-image: url('../img/lightpaperfibers.png');
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .container {
+  height: inherit;
+  position: relative;
+  .row {
     height: inherit;
-    position: relative;
-    .row {
-        height: inherit;
-        .col-md-12 {
-            height: inherit;
-        }
+    .col-md-12 {
+      height: inherit;
     }
+  }
 }
 
 
 h3 {
-    font-size: 36px;
-    font-weight: 400;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#clock-timer {
+  overflow: hidden;
 }
 
 timer {
-    height: 60%;
-    margin: auto;
-    position: absolute;
-    text-align: center;
-    top: 0; left: 0; bottom: 0; right: 0;
-    width: 100%;
-    .hour, .mins, .secs {
-        display: inline-block;
-        padding: 0 50px;
-        h1 {
-            font-size: 20em;
-            font-weight: 400;
-        }
-        p {
-            font-weight: 300
-        }
+  height: 60%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  .hour, .mins, .secs {
+    display: inline-block;
+    padding: 0 50px;
+    h1 {
+      font-size: 20em;
+      font-weight: 400;
     }
+    p {
+      font-weight: 300
+    }
+  }
 }
 
 #buttons {
-    width: 210px;
-    #resume {
-        float: left;
-    }
-    #reset {
-        float: right;
-    }
+  float: left;
+  width: 210px;
+  #resume {
+    float: left;
+  }
+  #reset {
+    float: right;
+  }
+}
+
+#source {
+  float: right;
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),

@@ -2,8 +2,10 @@
 body{background-image:url('../img/lightpaperfibers.png');font-family:'Lato',sans-serif;height:100%;position:absolute;width:100%}
 .container{height:inherit;position:relative}.container .row{height:inherit}.container .row .col-md-12{height:inherit}
 h3{font-size:36px;font-weight:400}
+#clock-timer{overflow:hidden}
 timer{height:60%;margin:auto;position:absolute;text-align:center;top:0;left:0;bottom:0;right:0;width:100%}timer .hour,timer .mins,timer .secs{display:inline-block;padding:0 50px}timer .hour h1,timer .mins h1,timer .secs h1{font-size:20em;font-weight:400}
 timer .hour p,timer .mins p,timer .secs p{font-weight:300}
-#buttons{width:210px}#buttons #resume{float:left}
+#buttons{float:left;width:210px}#buttons #resume{float:left}
 #buttons #reset{float:right}
+#source{float:right}
 @media only screen and (-Webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5){body{background-image:url('../img/lightpaperfibers_@2x.png')}}
